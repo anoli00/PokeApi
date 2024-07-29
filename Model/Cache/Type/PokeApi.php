@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Model\Cache\Type;
+namespace Atma\PokemonIntegration\Model\Cache\Type;
 
 use Magento\Framework\App\Cache\Type\FrontendPool;
 use Magento\Framework\Cache\Frontend\Decorator\TagScope;

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Model\Cache;
+namespace Atma\PokemonIntegration\Model\Cache;
 
 use Magento\Framework\Cache\FrontendInterface;
 

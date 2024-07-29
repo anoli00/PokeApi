@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Model\ErrorMessage;
+namespace Atma\PokemonIntegration\Model\ErrorMessage;
 
 use Exception;
 use Magento\Framework\Exception\LocalizedException;

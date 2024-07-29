@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace Model;
+namespace Atma\PokemonIntegration\Model;
 
+use Atma\PokemonIntegration\Model\Cache\Type\PokeApi;
 use Magento\Catalog\Model\Product\Attribute\Source\Status;
 use Magento\Catalog\Model\ResourceModel\Product\CollectionFactory as ProductCollectionFactory;
 use Magento\Framework\App\Cache\StateInterface;
 use Magento\Framework\Exception\LocalizedException;
-use Model\Cache\Type\PokeApi;
 use Psr\Log\LoggerInterface;
 
 class WarmCache

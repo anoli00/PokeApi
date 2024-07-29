@@ -1,6 +1,6 @@
 <?php
 
-namespace Plugin;
+namespace Atma\PokemonIntegration\Plugin;
 
 use Closure;
 use Magento\Catalog\Api\Data\ProductInterface;

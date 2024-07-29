@@ -2,6 +2,11 @@
 
 This module integrates with PokeAPI and enables the assignment of Pokémon (by name) to your products.
 
+### Installation
+- `composer config repositories.atma/pokemon-integration vcs https://github.com/anoli00/atma-pokemon-integration.git`
+- `composer require atma/pokemon-integration`
+- `bin/magento setup:upgrade`
+
 ### Configuration
 
 Configuration is under: `Stores -> Configuration -> Atma -> Pokemon Integration`

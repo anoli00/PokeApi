@@ -1,6 +1,6 @@
 <?php
 
-namespace Plugin;
+namespace Atma\PokemonIntegration\Plugin;
 
 use Magento\Catalog\Api\Data\ProductAttributeMediaGalleryEntryInterface;
 use Magento\Catalog\Api\Data\ProductInterface;

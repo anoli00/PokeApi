@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Api\Data;
+namespace Atma\PokemonIntegration\Api\Data;
 
 interface PokemonDataInterface
 {

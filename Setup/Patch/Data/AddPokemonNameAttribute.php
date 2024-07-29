@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Setup\Patch\Data;
+namespace Atma\PokemonIntegration\Setup\Patch\Data;
 
 use Magento\Catalog\Model\Category;
 use Magento\Catalog\Model\Product;

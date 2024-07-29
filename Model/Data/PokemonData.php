@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Model\Data;
 
-use Api\Data\PokemonDataInterface;
+use Atma\PokemonIntegration\Api\Data\PokemonDataInterface;
 use Magento\Framework\Data\Collection;
 use Magento\Framework\Data\CollectionFactory as DataCollectionFactory;
 use Magento\Framework\DataObject;

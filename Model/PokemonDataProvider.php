@@ -1,17 +1,17 @@
 <?php
 declare(strict_types=1);
 
-namespace Model;
+namespace Atma\PokemonIntegration\Model;
 
-use Api\Data\PokemonDataInterface;
-use Api\PokemonDataProviderInterface;
+use Atma\PokemonIntegration\Api\Data\PokemonDataInterface;
+use Atma\PokemonIntegration\Api\PokemonDataProviderInterface;
 use Atma\PokemonIntegration\Api\Data\PokemonDataInterfaceFactory;
+use Atma\PokemonIntegration\Exception\PokeApiException;
+use Atma\PokemonIntegration\Exception\PokemonNotFoundException;
+use Atma\PokemonIntegration\Model\Cache\LoadPokeApiCache;
+use Atma\PokemonIntegration\Model\Cache\SavePokeApiCache;
 use Exception;
-use Exception\PokeApiException;
-use Exception\PokemonNotFoundException;
 use Magento\Framework\Exception\LocalizedException;
-use Model\Cache\LoadPokeApiCache;
-use Model\Cache\SavePokeApiCache;
 use Psr\Log\LoggerInterface;
 
 class PokemonDataProvider implements PokemonDataProviderInterface

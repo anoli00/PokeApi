@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace Observer;
+namespace Atma\PokemonIntegration\Observer;
 
+use Atma\PokemonIntegration\Model\AssignExtensionAttributeToProduct;
 use Magento\Catalog\Api\Data\ProductInterface;
 use Magento\Framework\Event\Observer as EventObserver;
 use Magento\Framework\Event\ObserverInterface;
-use Model\AssignExtensionAttributeToProduct;
 
 class AssignPokemonToProductObserver implements ObserverInterface
 {

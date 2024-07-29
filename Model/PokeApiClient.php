@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Model;
+namespace Atma\PokemonIntegration\Model;
 
-use Exception\PokeApiException;
-use Exception\PokemonNotFoundException;
+use Atma\PokemonIntegration\Exception\PokeApiException;
+use Atma\PokemonIntegration\Exception\PokemonNotFoundException;
 use Magento\Framework\HTTP\Client\Curl;
 use Magento\Framework\Serialize\Serializer\Json as JsonSerializer;
 

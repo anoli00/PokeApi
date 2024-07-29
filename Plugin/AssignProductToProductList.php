@@ -1,10 +1,10 @@
 <?php
 
-namespace Plugin;
+namespace Atma\PokemonIntegration\Plugin;
 
+use Atma\PokemonIntegration\Model\AssignExtensionAttributeToProduct;
 use Magento\Catalog\Block\Product\ListProduct;
 use Magento\Eav\Model\Entity\Collection\AbstractCollection;
-use Model\AssignExtensionAttributeToProduct;
 
 class AssignProductToProductList
 {

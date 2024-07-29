@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace Model;
+namespace Atma\PokemonIntegration\Model;
 
-use Api\PokemonDataProviderInterface;
+use Atma\PokemonIntegration\Api\PokemonDataProviderInterface;
+use Atma\PokemonIntegration\Model\ErrorMessage\HandlerInterface as ErrorMessageHandler;
 use Exception;
 use Magento\Catalog\Api\Data\ProductExtensionFactory;
 use Magento\Catalog\Api\Data\ProductInterface;
-use Model\ErrorMessage\HandlerInterface as ErrorMessageHandler;
 
 class AssignExtensionAttributeToProduct
 {

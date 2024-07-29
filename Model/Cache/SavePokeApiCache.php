@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace Model\Cache;
+namespace Atma\PokemonIntegration\Model\Cache;
 
+use Atma\PokemonIntegration\Model\Cache\Type\PokeApi;
+use Atma\PokemonIntegration\Model\ConfigProvider;
 use Magento\Framework\App\Cache\StateInterface;
 use Magento\Framework\Cache\FrontendInterface;
 use Magento\Framework\Serialize\SerializerInterface;
-use Model\Cache\Type\PokeApi;
-use Model\ConfigProvider;
 
 class SavePokeApiCache
 {

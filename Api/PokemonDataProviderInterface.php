@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Api;
+namespace Atma\PokemonIntegration\Api;
 
-use Api\Data\PokemonDataInterface;
+use Atma\PokemonIntegration\Api\Data\PokemonDataInterface;
 use Magento\Framework\Exception\LocalizedException;
 
 interface PokemonDataProviderInterface

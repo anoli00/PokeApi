@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Model\Config\Backend;
+namespace Atma\PokemonIntegration\Model\Config\Backend;
 
 use Exception;
 use Magento\Cron\Model\Config\Source\Frequency;

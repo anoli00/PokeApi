@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Model\Cache;
+namespace Atma\PokemonIntegration\Model\Cache;
 
-use Model\Cache\Type\PokeApi;
+use Atma\PokemonIntegration\Model\Cache\Type\PokeApi;
 
 trait CacheKeyGeneratorTrait
 {

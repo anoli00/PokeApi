@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Cron;
+namespace Atma\PokemonIntegration\Cron;
 
-use Model\WarmCache as WarmCacheCommand;
+use Atma\PokemonIntegration\Model\WarmCache as WarmCacheCommand;
 
 class WarmCache
 {

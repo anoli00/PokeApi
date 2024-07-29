@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Plugin;
+namespace Atma\PokemonIntegration\Plugin;
 
 use Magento\Catalog\Block\Product\View\Gallery;
 
