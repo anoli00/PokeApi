@@ -1,0 +1,10 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Cron:etc/crontab.xsd">
+    <group id="default">
+        <job name="atma_pokemon_integration_warm_cache" instance="Atma\PokemonIntegration\Cron\WarmCache"
+             method="execute">
+            <config_path>crontab/default/jobs/pokemon_integration_cache_warmer/schedule/cron_expr</config_path>
+        </job>
+    </group>
+</config>

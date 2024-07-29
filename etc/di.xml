@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="Atma\PokemonIntegration\Model\Cache\LoadPokeApiCache">
+        <arguments>
+            <argument name="cache" xsi:type="object">Atma\PokemonIntegration\Model\Cache\Type\PokeApi</argument>
+        </arguments>
+    </type>
+    <type name="Atma\PokemonIntegration\Model\Cache\SavePokeApiCache">
+        <arguments>
+            <argument name="cache" xsi:type="object">Atma\PokemonIntegration\Model\Cache\Type\PokeApi</argument>
+        </arguments>
+    </type>
+    <type name="Atma\PokemonIntegration\Model\Cache\CleanPokeApiCache">
+        <arguments>
+            <argument name="cache" xsi:type="object">Atma\PokemonIntegration\Model\Cache\Type\PokeApi</argument>
+        </arguments>
+    </type>
+    <preference for="Atma\PokemonIntegration\Api\PokemonDataProviderInterface"
+                type="Atma\PokemonIntegration\Model\PokemonDataProvider"/>
+    <preference for="Atma\PokemonIntegration\Api\Data\PokemonDataInterface"
+                type="Atma\PokemonIntegration\Model\Data\PokemonData"/>
+    <preference for="Atma\PokemonIntegration\Model\ErrorMessage\HandlerInterface"
+                type="Atma\PokemonIntegration\Model\ErrorMessage\MessageManagerHandler"/>
+</config>

@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="atma" translate="label" sortOrder="1000">
+            <label>Atma</label>
+        </tab>
+        <section id="pokemon_integration" translate="label" type="text" sortOrder="100" showInDefault="1"
+                 showInWebsite="1" showInStore="1">
+            <label>Pokemon Integration</label>
+            <tab>atma</tab>
+            <resource>Atma_PokemonIntegration::config</resource>
+            <group id="general" translate="label" sortOrder="10" showInDefault="1" showInWebsite="1"
+                   showInStore="1">
+                <label>General Configuration</label>
+                <field id="api_url" translate="label comment" type="text" sortOrder="10" showInDefault="1"
+                       showInWebsite="1" showInStore="1" canRestore="1">
+                    <label>PokeAPI Base URL</label>
+                    <comment>Enter the base URL for PokeAPI (e.g., https://pokeapi.co/api/v2/)</comment>
+                </field>
+                <field id="main_image" translate="label comment" type="text" sortOrder="10" showInDefault="1"
+                       showInWebsite="1" showInStore="1" canRestore="1">
+                    <label>Main image</label>
+                    <comment>Sprite name used for main product image</comment>
+                </field>
+                <field id="additional_images" translate="label comment" type="text" sortOrder="10" showInDefault="1"
+                       showInWebsite="1" showInStore="1" canRestore="1">
+                    <label>Additional images</label>
+                    <comment>Sprite names used in product gallery (comma separated values)</comment>
+                </field>
+            </group>
+            <group id="cache" translate="label" sortOrder="20" showInDefault="1">
+                <label>Cache</label>
+                <field id="lifetime" translate="label comment" type="text" sortOrder="10" showInDefault="1">
+                    <label>Cache lifetime (Seconds)</label>
+                    <comment>Cache lifetime for PokeApi response</comment>
+                </field>
+                <field id="warmer_enabled" translate="label" type="select" sortOrder="10" showInDefault="1">
+                    <label>Enable cache warmer</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="warmer_time" translate="label" type="time" sortOrder="30" showInDefault="1">
+                    <label>Cache warmer start time</label>
+                    <depends>
+                        <field id="warmer_enabled">1</field>
+                    </depends>
+                </field>
+                <field id="warmer_frequency" translate="label" type="select" sortOrder="40" showInDefault="1">
+                    <label>Cache warmer frequency</label>
+                    <depends>
+                        <field id="warmer_enabled">1</field>
+                    </depends>
+                    <source_model>Magento\Cron\Model\Config\Source\Frequency</source_model>
+                    <backend_model>Atma\PokemonIntegration\Model\Config\Backend\CacheWarmerCron</backend_model>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>
