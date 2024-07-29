@@ -6,9 +6,9 @@ namespace Atma\PokemonIntegration\Api\Data;
 
 interface PokemonDataInterface
 {
-    public const string NAME = 'name';
-    public const string MAIN_IMAGE_URL = 'main_image_url';
-    public const string ADDITIONAL_IMAGE_URLS = 'additional_image_urls';
+    public const NAME = 'name';
+    public const MAIN_IMAGE_URL = 'main_image_url';
+    public const ADDITIONAL_IMAGE_URLS = 'additional_image_urls';
 
     /**
      * @return string
