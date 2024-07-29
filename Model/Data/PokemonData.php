@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Atma\PokemonIntegratio\Model\Data;
+namespace Atma\PokemonIntegration\Model\Data;
 
 use Atma\PokemonIntegration\Api\Data\PokemonDataInterface;
 use Magento\Framework\Data\Collection;
